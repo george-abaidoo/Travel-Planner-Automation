@@ -17,23 +17,16 @@ It’s perfect for frequent travelers who want a smart assistant to simplify tri
 
 ## 📊 Workflow Diagram
 
-Webhook Form (user submits trip details)            
-            
- ↓
+    Webhook Form (user submits trip details)
+            ↓
+        Flight API (fetch flight options)
+            ↓
+        Weather API (fetch destination forecast)
+            ↓
+    Google Calendar Node (add trip events)
+            ↓
+    Email Node (send full trip summary to user)
 
-Flight API (fetch flight options)
-
-↓
-
-Weather API (fetch destination forecast)            
-
-↓
-
-Google Calendar Node (add trip events)
-
-↓
-
-Email Node (send full trip summary to user)
 
 *Workflow Diagram to be illustrated after full implementation*
 
